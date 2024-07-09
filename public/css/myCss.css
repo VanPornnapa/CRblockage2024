@@ -1,0 +1,244 @@
+/* *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mitr', sans-serif;
+    color: #384047;
+  } */
+  
+  form {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 20px ;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  /* h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  } */
+
+ 
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 1px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 3px;
+  }
+  
+  /* input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  } */
+  
+  /* Basic styles */
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+  label {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 2em;
+    height: 1.5em;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  label::before,
+  label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  label::before {
+    content: " ";
+    border: 2px solid #666666;
+    border-radius: 20%;
+  }
+  /* Checkbox */
+  input[type="checkbox"] + label::after {
+    content: "\2714";
+    color: #666666;
+    line-height: 1.5;
+    text-align: center;
+  }
+  /* Radio */
+  input[type="radio"] + label::before {
+    border-radius: 50%;
+  }
+  input[type=radio] + label::after {
+    content: " ";
+    top: .25em;
+    left: .25em;
+    width: 1em;
+    height: 1em;
+    background: #666666;
+    border: .2em solid #666666;
+    border-radius: 50%;
+  }
+  /* :checked */
+  input[type="checkbox"]:checked + label::before,
+  input[type="radio"]:checked + label::before {
+    background: #fff;
+    border-color: #666666;
+  }
+   input[type="checkbox"] + label::after,
+  input[type=radio] + label::after {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  
+  input[type="checkbox"]:checked + label::after,
+  input[type=radio]:checked + label::after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    
+  }
+/*-----------------------*/
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    /* padding: 19px 39px 18px 39px; */
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    /* width: 100%; */
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 1px;
+  }
+  .butsummit{
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 1px;
+
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border:1px solid #999;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  /* label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+    
+  } */
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  .myDiv{
+    display:none;
+  }  
+
+  #image_preview_bld img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  #image_preview_land img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  #image_preview_river_before img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  #image_preview_river_prob img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  #image_preview_river_after img{
+    width: 200px;
+    padding: 5px;
+  }
+
+  #image_preview_prob_sketch img{
+    width: 200px;
+    padding: 5px;
+  }
+  
+ @media screen and (min-width: 320px) {
+  
+    form {
+      max-width: 1200px;
+    }
+  
+  }
+
+
+
+  
