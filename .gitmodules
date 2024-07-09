@@ -1,0 +1,3 @@
+[submodule "chiang-rai"]
+	path = chiang-rai
+	url = https://github.com/siradaam/chiang-rai.git
